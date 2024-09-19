@@ -1,0 +1,124 @@
+/* App.css */
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+  }
+  
+  /* Styles pour les formulaires */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button, .nav-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  button:hover, .nav-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Styles pour la navigation */
+  .nav-bar {
+    margin-bottom: 20px;
+  }
+  
+  .logout-button {
+    background-color: #e74c3c;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Styles pour la page d'accueil */
+  .home-container {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .home-nav {
+    margin-top: 20px;
+  }
+  
+  .home-nav .nav-button {
+    margin: 0 10px;
+  }
+  
+  /* Styles pour la liste des livres */
+  .book-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .book-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media queries pour la responsivité */
+  @media (max-width: 600px) {
+    .app-container {
+      padding: 10px;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    input[type="number"] {
+      font-size: 16px; /* Évite le zoom sur mobile lors de la mise au point */
+    }
+  
+    button, .nav-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
